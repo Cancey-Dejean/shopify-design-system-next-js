@@ -609,3 +609,17 @@
     @apply font-sans;
   }
 }
+
+/* Storybook Styles ONLY: DO NOT DELETE */
+#storybook-docs {
+  font-family: "Inter", sans-serif;
+}
+
+.docs-story {
+  @apply bg-[var(--p-color-bg)];
+}
+
+.sbdocs-content {
+  @apply mx-auto !max-w-[1920px];
+}
+/* End Storybook Styles */
