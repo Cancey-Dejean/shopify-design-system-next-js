@@ -1,3 +1,5 @@
+import { ButtonProps } from "@/components/ui/button";
+
 export type Target = "_blank" | "_self" | "_parent" | "_top";
 
 export type Action = {
@@ -24,6 +26,7 @@ export type Action = {
 export type AccountConnectionProps = {
   /** Content to display as title */
   title?: React.ReactNode;
+  btnText?: string;
   /** Content to display as additional details */
   details?: React.ReactNode;
   /** Content to display as terms of service */
@@ -35,5 +38,5 @@ export type AccountConnectionProps = {
   /** Set if the account is connected */
   connected?: boolean;
   /** Action for account connection */
-  action?: Action;
+  onClick?: () => void;
 };
