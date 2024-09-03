@@ -1,4 +1,4 @@
-import { ButtonProps } from "@/components/ui/button";
+import { ButtonProps } from "@/components/ui/Button/Button";
 
 export type Target = "_blank" | "_self" | "_parent" | "_top";
 

@@ -59,7 +59,7 @@
         --p-color-bg-inverse: #1a1a1a;
         --p-color-bg-surface: #fff;
         --p-color-bg-surface-hover: #f7f7f7;
-        --p-color-bg-surface-active: #f3f3f3;
+        --p-color-bg-surface-active: #373737;
         --p-color-bg-surface-selected: var(--p-color-bg);
         --p-color-bg-surface-disabled: rgba(0, 0, 0, .05);
         --p-color-bg-surface-secondary: var(--p-color-bg-surface-hover);
@@ -560,6 +560,7 @@
     }
 
     .dark {
+        --p-color-bg-surface-active: #373737;
     }
 }
 
@@ -571,11 +572,19 @@
     body {
         @apply font-sans;
     }
+
+    a {
+        @apply text-[var(--p-color-text-link)] underline;
+    }
 }
 
 /* Storybook Styles ONLY: DO NOT DELETE */
 .css-6z0e3u {
     @apply !h-auto;
+}
+
+.docs-story, #storybook-preview-wrapper {
+    @apply bg-bg;
 }
 
 .sbdocs-content {

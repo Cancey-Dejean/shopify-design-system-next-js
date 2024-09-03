@@ -9,7 +9,6 @@ const config = {
       sans: "var(--p-font-family-sans)",
       mono: "var(--p-font-family-mono)",
     },
-
     fontSize: {
       275: "var(--p-font-size-275)",
       300: "var(--p-font-size-300)",
@@ -26,6 +25,9 @@ const config = {
       1000: "var(--p-font-size-1000)",
     },
     colors: {
+      surface: "var(--p-color-bg-surface)",
+      "surface-active": "var(--p-color-bg-surface-active)",
+      bg: "var(--p-color-bg)",
       border: "hsl(var(--border))",
       input: "hsl(var(--input))",
       ring: "hsl(var(--ring))",
